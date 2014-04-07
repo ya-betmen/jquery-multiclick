@@ -1,4 +1,5 @@
-// @author Rich Adams <rich@richadams.me>
+// @author Petr Zalyautdinov (Заляутдинов Пётр) <zalyautdinov.petr@gmail.com>
+// based on tripleclick plugin by Rich Adams <rich@richadams.me>
 
 // Implements a multi-click event. Click (or touch) three times within 1s on the element to trigger.
 
