@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>event:tripleclick</title>
+    <title>event:multiclick</title>
     <meta charset="utf-8" />
 
     <style>
@@ -40,14 +40,14 @@
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-    <script src="tripleclick.js" type="text/javascript"></script>
+    <script src="multiclick.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-    $(function() 
+    $(function()
     {
-        $("#one").bind("tripleclick", function() { $("#debug").append("\ntripleclick on ONE"); });
-        $("#two").on("tripleclick", function()   { $("#debug").append("\ntripleclick on TWO"); });
-        $("#three").on("tripleclick",{ threshold: 5000 }, function()   { $("#debug").append("\ntripleclick on THREE"); });
+        $("#one").bind("multiclick", function() { $("#debug").append("\n3 clicks on ONE"); });
+        $("#two").on("multiclick", function()   { $("#debug").append("\n3 clicks on TWO"); });
+        $("#three").on("multiclick",{ threshold: 2000, clickCount: 5 }, function()   { $("#debug").append("\n5 clicks on THREE"); });
     });
     </script>
 </head>
